@@ -11,13 +11,14 @@ int main() {
 
     Node *sub = (*makeFunc(SUB))(add->value, mul->value);
     Node *fiboSub = (*makeFunc(SUB))(sub->value, NULL);
-    Node *fibo = (*makeFunc(FIBO))(sub->value,NULL);
+    Node *fibo = (*makeFunc(FIBO))(-sub->value);
 
     calc(add);
     calc(mul);
     calc(sub);
-    calc(fibo);
     calc(fiboSub);
+    calc(fibo);
+    
 
     return 0;
 }

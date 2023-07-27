@@ -19,9 +19,7 @@ typedef struct Node
 } Node;
 
 Node *createNode(TypeTag type, int value);
-Node *(*makeFunc(TypeTag type))(int, int);
+Node *(*makeFunc(TypeTag type))();
 void calc(Node *node);
-
-// void freeTree(Node* node);
 
 #endif // EXPRESSION_TREE_H

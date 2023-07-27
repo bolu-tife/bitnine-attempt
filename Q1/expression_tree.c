@@ -6,7 +6,7 @@
 #include "expression_tree.h"
 #include "arithmetic_operations.h"
 
-Node *(*makeFunc(TypeTag type))(int, int)
+Node *(*makeFunc(TypeTag type))()
 {
     switch (type)
     {
