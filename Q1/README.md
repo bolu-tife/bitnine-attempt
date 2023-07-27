@@ -21,6 +21,11 @@ The above command compiles all the C source files and links them into an executa
 4. Run the executable:
 `make run`
 
+
+5. To run test:
+`make test`
+
+
 The program will evaluate the arithmetic operations and Fibonacci sequence based on the given expressions and print the results.
 
 ## Sample Output
